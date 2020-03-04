@@ -78,7 +78,7 @@ html ::-webkit-scrollbar-corner {
 }
 
 .casting li span {
-  @apply w-1/2 text-black-200;
+  @apply w-1/2 text-black-200 pr-5/2;
 }
 
 .casting li strong {
