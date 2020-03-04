@@ -16,7 +16,7 @@
   pretty_urls = false
 [build.processing.css]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.js]
   bundle = false
   minify = false

@@ -1,0 +1,85 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("/assets/fonts/helvetica/400.woff2"),
+    url("/assets/fonts/helvetica/400.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("/assets/fonts/helvetica/500.woff2"),
+    url("/assets/fonts/helvetica/500.woff");
+}
+
+@font-face {
+  font-family: "Atlas Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("/assets/fonts/atlas/500.woff2"), url("/assets/fonts/atlas/500.woff");
+}
+
+html {
+  scrollbar-width: thin;
+  -webkit-tap-highlight-color: theme("colors.red.default");
+  scrollbar-color: theme("colors.red.default") transparent;
+}
+
+html body::-webkit-scrollbar {
+  width: 6px;
+}
+
+html ::selection,
+html ::-webkit-scrollbar-thumb {
+  color: theme("colors.white.default");
+  background: theme("colors.red.default");
+}
+
+html ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.gallery .row {
+  @apply -my-5/2;
+}
+
+.gallery .row .item {
+  @apply py-5;
+}
+
+@screen md {
+  .gallery .row {
+    @apply flex my-0 -mx-5/2;
+  }
+  .gallery .row .item {
+    @apply py-0 px-5;
+    height: 460px;
+  }
+}
+
+.casting li {
+  @apply flex w-full;
+}
+
+.casting li:not(:last-child) {
+  @apply mb-8;
+}
+
+.casting li span {
+  @apply w-1/2 text-black-200;
+}
+
+.casting li strong {
+  @apply w-1/2 font-medium;
+}

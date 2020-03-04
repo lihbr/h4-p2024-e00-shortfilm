@@ -4,7 +4,10 @@
   "description": "DESCRIPTION",
   "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
   "license": "SEE LICENSE IN LICENSE",
-  "scripts": {},
+  "scripts": {
+    "generate": "tailwindcss build ./src/assets/css/style.raw.css --output ./src/assets/css/style.css --config ./tailwind.config.js",
+    "help": "tailwindcss help"
+  },
   "engines": {
     "node": ">=10.16.3",
     "yarn": ">=1.13.0"
@@ -14,7 +17,9 @@
       "commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "8.3.0",
     "@commitlint/config-conventional": "8.3.0",
