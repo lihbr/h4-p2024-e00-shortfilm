@@ -43,7 +43,8 @@ module.exports = {
       inherit: "inherit",
       black: {
         default: "#212121",
-        200: "#b1b1b1"
+        200: "#b1b1b1",
+        "o-96": "rgba(33, 33, 33, 0.96)"
       },
       white: {
         default: "#fefefe"

@@ -34,6 +34,7 @@ html {
   scrollbar-width: thin;
   -webkit-tap-highlight-color: theme("colors.red.default");
   scrollbar-color: theme("colors.red.default") transparent;
+  background: url("/assets/img/noise.gif") repeat;
 }
 
 html body::-webkit-scrollbar {
