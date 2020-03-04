@@ -1,7 +1,7 @@
 {
-  "name": "NAME",
-  "version": "0.0.1",
-  "description": "DESCRIPTION",
+  "name": "le-grand-menage",
+  "version": "0.1.0",
+  "description": "Le Grand Ménage, a short film",
   "author": "lihbr <hello@lihbr.com> (https://lihbr.com)",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
